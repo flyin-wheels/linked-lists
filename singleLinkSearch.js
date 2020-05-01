@@ -104,15 +104,13 @@ class SinglyLinkedList {
         }
         return nodes;
     }
-
     srchList(value) {
         var current = this.head;
-
         while (current) {
-            if (current.value === value) return current;
+            if (current.value === value) return current.value;
             current = current.next;
         }
-        return null;
+        return "Not found";
     }
 }
 
@@ -126,5 +124,6 @@ sll.removeValue(111);
 sll.add(556);
 sll.displayValues();
 
-console.log(srchList(111)); // True
-console.log(srchList(112)); //False
+console.log(sll.srchList(556)); // true
+console.log(sll.srchList(5)); // true
+console.log(sll.srchList(30)); // false
