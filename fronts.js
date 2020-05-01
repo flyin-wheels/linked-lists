@@ -105,5 +105,4 @@ sll.addBack(100);
 sll.removeValue(102);
 sll.displayValues();
 var sizeOfMyList = sll.size();
-
 console.log(sizeOfMyList);
