@@ -95,7 +95,15 @@ class SinglyLinkedList {
         }
         console.log(output);
     }
-
+    length() {
+        var runner = this.head;
+        var nodes = 0;
+        while (runner) {
+            nodes += 1;
+            runner = runner.next
+        }
+        return nodes;
+    }
 
 srchList(value) {
     var current = this.head;
@@ -113,11 +121,8 @@ var sll = new SinglyLinkedList();
 
 sll.add(5);
 sll.add(111);
+sll.add(3000);
+sll.removeValue(111);
+sll.add(556);
 sll.displayValues();
-var sizeOfMyList = sll.size();
-
-console.log(sizeOfMyList);
-console.log(sll.srchList(5)); // true
-console.log(sll.srchList(111)); // true
-console.log(sll.srchList(3000)); // false
-
+console.log(sll.length());
