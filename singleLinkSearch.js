@@ -123,7 +123,6 @@ sll.add(3000);
 sll.removeValue(111);
 sll.add(556);
 sll.displayValues();
-
 console.log(sll.srchList(556)); // true
 console.log(sll.srchList(5)); // true
 console.log(sll.srchList(30)); // false
