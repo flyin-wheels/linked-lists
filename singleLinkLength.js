@@ -125,6 +125,5 @@ sll.add(3000);
 sll.removeValue(111);
 sll.add(556);
 sll.displayValues();
-
 console.log(srchList(111)); // True
 console.log(srchList(112)); //False
